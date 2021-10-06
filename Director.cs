@@ -13,7 +13,7 @@ namespace cse210_student_csharp_dice
     {
         bool _keepPlaying = true;
         int _score = 0;
-        Thrower _thrower = new Thrower();
+        Dealer _dealer = new Dealer();
 
         public void StartGame()
         {
