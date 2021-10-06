@@ -31,17 +31,17 @@ namespace cse210_student_csharp_dice
 
         void UserInput()
         {
-            throw new Exception;
+            throw new NotImplementedException();
         }
 
         void UpdateScore()
         {
-            throw new Exception;
+            throw new NotImplementedException();
         }
 
         void DisplayOutput()
         {
-            throw new Exception;
+            throw new NotImplementedException();
         }
 
         /*
