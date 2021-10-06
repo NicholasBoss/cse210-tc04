@@ -19,16 +19,32 @@ namespace cse210_student_csharp_dice
         {
             while (_keepPlaying)
             {
-                GetInputs();
+                UserInput();
 
                 if (_keepPlaying)
                 {
-                    DoUpdates();
-                    DoOutputs();
+                    UpdateScore();
+                    DisplayOutput();
                 }
             }
         }
 
+        void UserInput()
+        {
+            throw new Exception;
+        }
+
+        void UpdateScore()
+        {
+            throw new Exception;
+        }
+
+        void DisplayOutput()
+        {
+            throw new Exception;
+        }
+
+        /*
         void GetInputs()
         {
             if (!_thrower.IsFirstThrow())
@@ -66,7 +82,7 @@ namespace cse210_student_csharp_dice
                 Console.WriteLine("Game Over");
                 _keepPlaying = false;
             }
-        }
+        } */
 
     } // end of class: Director
 }
