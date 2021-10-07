@@ -34,3 +34,5 @@ git add <FILENAME>
 git commit -m "MESSAGE HERE"
 git push origin main
 git pull origin main
+
+Also, if you are working on the 'main' branch you don't have to include 'origin main'
