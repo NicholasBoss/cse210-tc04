@@ -20,6 +20,7 @@ namespace cse210_tc04
         public int _numDeals;
 
         ///<summary>
+        /// Checks to see if it is the first turn.
         ///<summary>
         public bool IsFirstTurn()
         {
@@ -27,13 +28,15 @@ namespace cse210_tc04
         }
 
         ///<summary>
+        /// The ResetDeal method handles the clearing of the deal of cards and
+        /// generates the next card in the deal.
         ///<summary>
         public void ResetDeal()
         {
             _numDeals++;
             _cards.Clear();
             Random randomGenerator = new Random();
-            
+
             for (int i = 0; i < NUM_CARDS; i++)
             {
                 int card = randomGenerator.Next(1,14);
