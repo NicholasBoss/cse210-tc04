@@ -16,7 +16,7 @@ namespace cse210_tc04
         /// Member variables go here:
         ///<summary>
         const int NUM_CARDS = 13;
-        List<int> cards = new List<int>();
+        List<int> _cards = new List<int>();
         public int _numDeals;
 
         ///<summary>
@@ -30,7 +30,7 @@ namespace cse210_tc04
         ///<summary>
         public void ResetDeal()
         {
-            throw new NotImplementedException();
+            _cards.Clear();
         }
 
         ///<summary>
