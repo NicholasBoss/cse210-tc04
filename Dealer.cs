@@ -15,6 +15,7 @@ namespace cse210_tc04
         ///<summary>
         /// Member variables go here:
         ///<summary>
+        const int NUM_CARDS = 13;
         List<int> cards = new List<int>();
         public int _numDeals;
 
