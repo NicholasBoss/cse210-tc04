@@ -3,6 +3,7 @@ Team Challenge 4 - HiLo
 
 Assignments:
 Kody:
+    Plug in wires within the Director.cs once we're done with our stuff
 Aoi:
     PointsPerCard
     DisplayCards
