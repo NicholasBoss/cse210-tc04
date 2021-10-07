@@ -5,23 +5,22 @@ namespace cse210_tc04
 {   
 
     /// <summary>
-    /// The dealer is responsible for managing the deals which include: 
+    /// The Dealer is responsible for managing the deals which include: 
     /// Showing the card
     /// managing point assignment
-    
-    /// <summary>
+    /// </summary>
     class Dealer
     {
         ///<summary>
         /// Member variables go here:
-        ///<summary>
+        ///</summary>
         const int NUM_CARDS = 13;
         List<int> _cards = new List<int>();
         public int _numDeals;
 
         ///<summary>
         /// Checks to see if it is the first turn.
-        ///<summary>
+        ///</summary>
         public bool IsFirstTurn()
         {
             return _numDeals == 0;
@@ -30,7 +29,7 @@ namespace cse210_tc04
         ///<summary>
         /// The ResetDeal method handles the clearing of the deal of cards and
         /// generates the next card in the deal.
-        ///<summary>
+        ///</summary>
         public void ResetDeal()
         {
             _numDeals++;
@@ -47,28 +46,28 @@ namespace cse210_tc04
         }
 
         ///<summary>
-        ///<summary>
+        ///</summary>
         public void CheckGuess()
         {
             throw new NotImplementedException();
         }
 
         ///<summary>
-        ///<summary>
+        ///</summary>
         public void CheckScore()
         {
             throw new NotImplementedException();
         }
 
         ///<summary>
-        ///<summary>
+        ///</summary>
         public void PointsPerCard()
         {
             throw new NotImplementedException();
         }
 
         ///<summary>
-        ///<summary>
+        ///</summary>
         public void DisplayCards()
         {
             throw new NotImplementedException();

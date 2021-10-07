@@ -29,19 +29,19 @@ namespace cse210_tc04
             }
         }
         ///<summary>
-        ///<summary>
+        ///</summary>
         void UserInput()
         {
             throw new NotImplementedException();
         }
         ///<summary>
-        ///<summary>
+        ///</summary>
         void UpdateScore()
         {
             throw new NotImplementedException();
         }
         ///<summary>
-        ///<summary>
+        ///</summary>
         void DisplayOutput()
         {
             throw new NotImplementedException();
