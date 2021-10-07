@@ -5,6 +5,7 @@ Assignments:
 
 
 Reminder:
+SAVE YOUR FILE!
 Git Command Structure:
 git add <FILENAME>
 git commit -m "MESSAGE HERE"
