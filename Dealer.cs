@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace cse210_tc04
 {   
@@ -14,12 +15,14 @@ namespace cse210_tc04
         ///<summary>
         /// Member variables go here:
         ///<summary>
-        
+        List<int> cards = new List<int>();
+        public int _numDeals;
+
         ///<summary>
         ///<summary>
-        public void IsFirstTurn()
+        public bool IsFirstTurn()
         {
-            throw new NotImplementedException();
+            return _numDeals == 0;
         }
 
         ///<summary>
