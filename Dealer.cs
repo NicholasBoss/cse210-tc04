@@ -11,7 +11,10 @@ namespace cse210_tc04
     /// <summary>
     class Dealer
     {
-
+        ///<summary>
+        /// Member variables go here:
+        ///<summary>
+        
         ///<summary>
         ///<summary>
         public void IsFirstTurn()
