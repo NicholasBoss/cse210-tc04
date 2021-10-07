@@ -4,8 +4,14 @@ Team Challenge 4 - HiLo
 Assignments:
 Kody:
 Aoi:
+    PointsPerCard
+    DisplayCards
 Andy:
-Nicholas:
+    CheckGuess
+    CheckScore
+Nicholas: 
+    IsFirstTurn
+    ResetDeal
 
 Director:
     UserInput
