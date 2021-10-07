@@ -30,7 +30,17 @@ namespace cse210_tc04
         ///<summary>
         public void ResetDeal()
         {
+            _numDeals++;
             _cards.Clear();
+            Random randomGenerator = new Random();
+            
+            for (int i = 0; i < NUM_CARDS; i++)
+            {
+                int card = randomGenerator.Next(1,14);
+                _cards.Add(card);
+            }
+            
+
         }
 
         ///<summary>
