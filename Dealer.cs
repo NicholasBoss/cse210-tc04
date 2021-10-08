@@ -77,7 +77,7 @@ namespace cse210_tc04
                     CheckScore();
                 }
             }
-            throw new NotImplementedException();
+            
         }
     
         ///<summary>
