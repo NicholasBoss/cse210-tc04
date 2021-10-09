@@ -32,19 +32,32 @@ namespace cse210_tc04
         ///</summary>
         void UserInput()
         {
-            throw new NotImplementedException();
+           if (!_dealer.IsFirstTurn())
+            {
+                Console.WriteLine("Keep playing? [y/n] ");
+                string choice = Console.ReadLine();
+                _keepPlaying = (choice == "y");
+            }
         }
         ///<summary>
         ///</summary>
         void UpdateScore()
         {
-            throw new NotImplementedException();
+            _dealer.ResetDeal();
+
+            _dealer.CheckGuess();
+
+            _dealer.CheckScore();
         }
         ///<summary>
         ///</summary>
         void DisplayOutput()
         {
-            throw new NotImplementedException();
+            string cardString = _dealer.DisplayCards();
+
+            Console.WriteLine();
+            Console.WriteLine($"Next car was: {}");
+            Console.WriteLine($"Your score is: {_score}");
         }
 
         /*
