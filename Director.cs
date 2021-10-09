@@ -7,7 +7,7 @@ namespace cse210_tc04
     /// the actors, and all of their interactions.
     /// 
     /// For this program, it has responsibility for the score, coordinating with the
-    /// player to choose, and the sequence of play.
+    /// player to guess the next card, and the sequence of play.
     /// </summary>
     class Director
     {
