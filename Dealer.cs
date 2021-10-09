@@ -83,18 +83,18 @@ namespace cse210_tc04
     
         ///<summary>
         ///</summary>
-        public int CheckScore(int _score)
+        public int CheckScore(int score)
         {
-            
+            score = 0;
             if (_increase_score == true)
             {
-                _score += 100;
+                score += 100;
             }
             else if (_increase_score == false)
             {
-                _score = _score - 75;
+                score = score - 75;
             }
-            return _score;
+            return score;
         }
 
         ///<summary>
