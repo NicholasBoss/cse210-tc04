@@ -53,7 +53,7 @@ namespace cse210_tc04
         ///</summary>
         void DisplayOutput()
         {
-            string cardString = _dealer.DisplayCards();
+            string cardString = _dealer.DisplayCard();
 
             Console.WriteLine();
             Console.WriteLine($"Next card was: {cardString}");

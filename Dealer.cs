@@ -112,7 +112,7 @@ namespace cse210_tc04
         ///<summary>
         /// This function generate next card
         ///</summary>
-        public string DisplayCards()
+        public string DisplayCard()
         {     
             Random randomGenerator = new Random();
             
