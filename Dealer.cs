@@ -103,7 +103,7 @@ namespace cse210_tc04
 
         ///<summary>
         ///<summary>
-        public void DisplayCards()
+        public string DisplayCards()
         {
             throw new NotImplementedException();
         }
