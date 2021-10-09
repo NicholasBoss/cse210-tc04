@@ -46,7 +46,7 @@ namespace cse210_tc04
 
         ///<summary>
         ///<summary>
-        public void CheckGuess()
+        public void CheckGuess(string _guess)
         {
             int _numguess;
             if (_guess == "l")

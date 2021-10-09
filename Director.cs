@@ -37,7 +37,10 @@ namespace cse210_tc04
                 Console.WriteLine("Keep playing? [y/n] ");
                 string choice = Console.ReadLine();
                 _keepPlaying = (choice == "y");
-            }
+            } 
+            Console.WriteLine("Higher or lower? ");
+            _dealer._guess = Console.ReadLine();
+            _dealer.CheckGuess(_dealer._guess);
         }
         ///<summary>
         ///</summary>
@@ -56,7 +59,7 @@ namespace cse210_tc04
             string cardString = _dealer.DisplayCards();
 
             Console.WriteLine();
-            Console.WriteLine($"Next car was: {}");
+            Console.WriteLine($"Next card was: {}");
             Console.WriteLine($"Your score is: {_score}");
         }
 
