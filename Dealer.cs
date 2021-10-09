@@ -21,6 +21,7 @@ namespace cse210_tc04
         public string _guess;
         int _current_card_number;
         bool _increase_score;
+        int _score;
 
         ///<summary>
         ///<summary>
