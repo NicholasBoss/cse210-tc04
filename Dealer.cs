@@ -15,7 +15,6 @@ namespace cse210_tc04
         /// Member variables go here:
         ///</summary>
         const int NUM_CARDS = 13;
-        List<int> _cards = new List<int>();
         public int _numDeals;
         public string _guess;
         public int _current_card_number;
@@ -38,11 +37,11 @@ namespace cse210_tc04
         public void ResetDeal()
         {
             _numDeals++;
-            _cards.Clear();
+            
             Random randomGenerator = new Random();
             
             int card = randomGenerator.Next(1,14);
-            _cards.Add(card);
+            _current_card_number = card;
         }
 
         ///<summary>
