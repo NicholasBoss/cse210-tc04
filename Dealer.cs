@@ -98,17 +98,27 @@ namespace cse210_tc04
         }
 
         ///<summary>
+        /// This function make the score by usingCheckScore function 
         ///</summary>
-        public void PointsPerCard()
+        public int PointsPerCard()
         {
-            throw new NotImplementedException();
+            int score = 0;
+            int guessNum = int.Parse(_guess);
+            score += CheckScore(guessNum);
+
+            return score;
         }
 
         ///<summary>
+        /// This function generate next card
         ///</summary>
         public string DisplayCards()
-        {
-            throw new NotImplementedException();
+        {     
+            Random randomGenerator = new Random();
+            
+            string NextCard = randomGenerator.Next(1,14).ToString();
+
+            return NextCard;
         }
     }
 }
