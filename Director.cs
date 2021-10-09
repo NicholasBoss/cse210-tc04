@@ -13,6 +13,7 @@ namespace cse210_tc04
     {
         bool _keepPlaying = true;
         int _score = 0;
+        int _current_card_number = 0;
         Dealer _dealer = new Dealer();
 
         public void StartGame()
@@ -59,7 +60,7 @@ namespace cse210_tc04
             string cardString = _dealer.DisplayCards();
 
             Console.WriteLine();
-            Console.WriteLine($"Next card was: {}");
+            Console.WriteLine($"Next card was: {_current_card_number}");
             Console.WriteLine($"Your score is: {_score}");
         }
 
