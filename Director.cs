@@ -48,7 +48,7 @@ namespace cse210_tc04
         {
             _dealer.ResetDeal();
 
-            _dealer.CheckGuess();
+            _dealer.CheckGuess(_dealer._guess);
 
             _dealer.CheckScore();
         }
