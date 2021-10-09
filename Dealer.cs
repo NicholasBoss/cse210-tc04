@@ -32,10 +32,10 @@ namespace cse210_tc04
         }
 
         ///<summary>
-        /// The ResetDeal method handles the clearing of the deal of cards and
+        /// The NewDeal method handles the clearing of the deal of cards and
         /// generates the next card in the deal.
         ///</summary>
-        public void ResetDeal()
+        public void NewDeal()
         {
             _numDeals++;
             _cards.Clear();

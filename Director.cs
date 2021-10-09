@@ -43,7 +43,7 @@ namespace cse210_tc04
         ///</summary>
         void UpdateScore()
         {
-            _dealer.ResetDeal();
+            _dealer.NewDeal();
 
             _dealer.CheckGuess();
 
