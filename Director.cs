@@ -47,7 +47,7 @@ namespace cse210_tc04
 
             _dealer.CheckGuess();
 
-            _dealer.CheckScore();
+            _dealer.CheckScore(_score);
         }
         ///<summary>
         ///</summary>
@@ -56,7 +56,7 @@ namespace cse210_tc04
             string cardString = _dealer.DisplayCards();
 
             Console.WriteLine();
-            Console.WriteLine($"Next car was: {}");
+            Console.WriteLine($"Next card was: {cardString}");
             Console.WriteLine($"Your score is: {_score}");
         }
 
