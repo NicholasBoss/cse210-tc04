@@ -51,7 +51,7 @@ namespace cse210_tc04
 
             _dealer.CheckGuess(_dealer._guess);
 
-            _dealer.CheckScore();
+            _dealer.CheckScore(_dealer._score);
         }
         ///<summary>
         ///</summary>
@@ -60,8 +60,8 @@ namespace cse210_tc04
             string cardString = _dealer.DisplayCards();
 
             Console.WriteLine();
-            Console.WriteLine($"Next card was: {_current_card_number}");
-            Console.WriteLine($"Your score is: {_score}");
+            Console.WriteLine($"Next card was: {_dealer._current_card_number}");
+            Console.WriteLine($"Your score is: {_dealer._score}");
         }
 
         /*
