@@ -33,6 +33,8 @@ namespace cse210_tc04
         ///</summary>
         void UserInput()
         {
+            _dealer.DisplayCards();
+
            if (!_dealer.IsFirstTurn())
             {
                 Console.WriteLine("Keep playing? [y/n] ");
@@ -57,7 +59,7 @@ namespace cse210_tc04
         ///</summary>
         void DisplayOutput()
         {
-            string cardString = _dealer.DisplayCards();
+            _dealer.DisplayCards();
 
             Console.WriteLine();
             Console.WriteLine($"Next card was: {_dealer._current_card_number}");
