@@ -93,45 +93,6 @@ namespace cse210_tc04
             Console.WriteLine("Gameover");
         }
 
-        /*
-        void GetInputs()
-        {
-            if (!_thrower.IsFirstThrow())
-            {
-                Console.WriteLine("Roll again? [y/n] ");
-                string choice = Console.ReadLine();
-                _keepPlaying = (choice == "y");
-            }
-        }
-
-        void DoUpdates()
-        {
-            _thrower.ThrowDice();
-
-            if (_thrower.ContainsScoringDie())
-            {
-                _score += _thrower.GetPoints();
-            }
-            else
-            {
-                _score = 0;
-            }
-        }
-
-        void DoOutputs()
-        {
-            string diceString = _thrower.GetDiceString();
-
-            Console.WriteLine();
-            Console.WriteLine($"You rolled: {diceString}");
-            Console.WriteLine($"Your score is: {_score}");
-
-            if (!_thrower.CanThrow())
-            {
-                Console.WriteLine("Game Over");
-                _keepPlaying = false;
-            }
-        } */
-
+       
     } // end of class: Director
 }
