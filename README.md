@@ -1,6 +1,8 @@
 # cse210-tc04
 Team Challenge 4 - HiLo
 
+Repo: https://github.com/NicholasBoss/cse210-tc04
+
 Assignments and Authors:
 Kody:
     Plug in wires within the Director.cs once we're done with our stuff
