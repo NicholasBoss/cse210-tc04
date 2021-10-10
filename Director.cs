@@ -12,8 +12,9 @@ namespace cse210_tc04
     class Director
     {
         bool _keepPlaying = true;
-        int _score = 0;
+        int _score;
         int _current_card_number = 0;
+        int rounds;
         Dealer _dealer = new Dealer();
 
         public void StartGame()
@@ -41,7 +42,7 @@ namespace cse210_tc04
         {
             Console.Write("Higher or lower? ");
             _dealer._guess = Console.ReadLine();
-            _dealer.CheckGuess(_dealer._guess);
+            
         }
         
         void UserInput()
@@ -62,11 +63,10 @@ namespace cse210_tc04
         ///</summary>
         void UpdateScore()
         {
-            _dealer.ResetDeal();
-
+            
             _dealer.CheckGuess(_dealer._guess);
 
-            _dealer.CheckScore(_dealer._score);
+            _score = _dealer._starting_score;
         }
         ///<summary>
         ///</summary>
@@ -77,15 +77,17 @@ namespace cse210_tc04
         }
         void DisplayOutput()
         {
-
-            string cardString = _dealer.DisplayCard();
-
-            _dealer.DisplayCard();
-
-
+            if(_score > 0) 
+            {                 
+                        
             Console.WriteLine();
-            Console.WriteLine($"Next card was: {_dealer._current_card_number}");
-            Console.WriteLine($"Your score is: {_dealer._score}");
+            Console.WriteLine($"Next card is: {_dealer._next_card_number}");
+            Console.WriteLine($"Your score is: {_score}");
+            }
+            else if (_score <= 0)
+            {
+                Gameover();
+            }
         }
 
         void Gameover()

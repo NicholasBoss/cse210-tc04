@@ -19,8 +19,10 @@ namespace cse210_tc04
         public string _guess;
         public int _current_card_number;
         public bool _increase_score;
-        public int _score = 0;
+        public int _score;
         public int _next_card_number;
+        public int _starting_score = 300;
+        int _rounds = 0;
 
 
         ///<summary>
@@ -38,7 +40,6 @@ namespace cse210_tc04
         public void ResetDeal()
         {
             _numDeals++;
-            
             Random randomGenerator = new Random();
             
             int card = randomGenerator.Next(1,14);
@@ -56,8 +57,8 @@ namespace cse210_tc04
             int _numguess;
             if (_guess == "l")
             {
-                _numguess = 0;
-                if (_numguess < _current_card_number)
+                _numguess = _next_card_number;
+                if (_numguess <= _current_card_number)
                 {
                     _increase_score = true;
                     CheckScore(_score);
@@ -70,8 +71,8 @@ namespace cse210_tc04
             }
             if (_guess == "h")
             {
-                _numguess = 15;
-                if (_numguess > _current_card_number)
+                _numguess = _next_card_number;
+                if (_numguess >= _current_card_number)
                 {
                     _increase_score = true;
                     CheckScore(_score);
@@ -93,12 +94,13 @@ namespace cse210_tc04
             
             if (_increase_score == true)
             {
-                _score += 100;
+                _starting_score += 100;
             }
             else if (_increase_score == false)
             {
-                _score = _score - 75;
+                _starting_score = _starting_score - 75;
             }
+            _score = _starting_score;
             return _score;
         }
 
@@ -119,9 +121,9 @@ namespace cse210_tc04
         ///</summary>
         public string DisplayCard()
         {     
-            Random randomGenerator = new Random();
+            ResetDeal();
             
-            string CurrentCard = randomGenerator.Next(1,14).ToString();
+            string CurrentCard =_current_card_number.ToString();
             return CurrentCard;
         }
     }
