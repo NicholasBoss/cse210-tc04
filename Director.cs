@@ -20,17 +20,30 @@ namespace cse210_tc04
         {
             while (_keepPlaying)
             {
+                CurrentNumber();
+                GuessNumber();
+                DisplayScore();
                 UserInput();
-
-                if (_keepPlaying)
-                {
-                    UpdateScore();
-                    DisplayOutput();
-                }
+                
             }
+            Gameover();
         }
         ///<summary>
         ///</summary>
+
+        void CurrentNumber ()
+        {
+            string CurrentNumber = _dealer.DisplayCard();
+            Console.WriteLine($"The card is: {CurrentNumber}");
+        }
+
+        void GuessNumber()
+        {
+            Console.Write("Higher or lower? ");
+            _dealer._guess = Console.ReadLine();
+            _dealer.CheckGuess(_dealer._guess);
+        }
+        
         void UserInput()
         {
            if (!_dealer.IsFirstTurn())
@@ -39,10 +52,10 @@ namespace cse210_tc04
                 string choice = Console.ReadLine();
                 _keepPlaying = (choice == "y");
             } 
-            Console.WriteLine("Higher or lower? ");
-            _dealer._guess = Console.ReadLine();
-            _dealer.CheckGuess(_dealer._guess);
+            
         }
+
+        
         ///<summary>
         ///</summary>
         void UpdateScore()
@@ -55,13 +68,23 @@ namespace cse210_tc04
         }
         ///<summary>
         ///</summary>
+        void DisplayScore()
+        {
+            UpdateScore();
+            DisplayOutput();
+        }
         void DisplayOutput()
         {
-            string cardString = _dealer.DisplayCards();
+            string cardString = _dealer.DisplayCard();
 
             Console.WriteLine();
             Console.WriteLine($"Next card was: {_dealer._current_card_number}");
             Console.WriteLine($"Your score is: {_dealer._score}");
+        }
+
+        void Gameover()
+        {
+            Console.WriteLine("Gameover");
         }
 
         /*

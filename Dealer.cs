@@ -20,6 +20,7 @@ namespace cse210_tc04
         public int _current_card_number;
         public bool _increase_score;
         public int _score = 0;
+        public int _next_card_number;
 
 
         ///<summary>
@@ -42,9 +43,13 @@ namespace cse210_tc04
             
             int card = randomGenerator.Next(1,14);
             _current_card_number = card;
+
+            int next_card = randomGenerator.Next(1,14);
+            _next_card_number = next_card;
         }
 
         ///<summary>
+        /// if guess is correct, next card number gets set as current card number.
         ///</summary>
         public void CheckGuess(string _guess)
         {
@@ -81,6 +86,7 @@ namespace cse210_tc04
         }
     
         ///<summary>
+        ///
         ///</summary>
         public int CheckScore(int _score)
         {
@@ -111,13 +117,12 @@ namespace cse210_tc04
         ///<summary>
         /// This function generate next card
         ///</summary>
-        public string DisplayCards()
+        public string DisplayCard()
         {     
             Random randomGenerator = new Random();
             
-            string NextCard = randomGenerator.Next(1,14).ToString();
-
-            return NextCard;
+            string CurrentCard = randomGenerator.Next(1,14).ToString();
+            return CurrentCard;
         }
     }
 }
