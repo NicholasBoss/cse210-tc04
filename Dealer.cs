@@ -88,7 +88,7 @@ namespace cse210_tc04
         }
     
         ///<summary>
-        ///
+        /// This will check the current score and appropriately add or subtract the score from the correct or incorrect result.
         ///</summary>
         public int CheckScore(int _score)
         {
@@ -120,7 +120,7 @@ namespace cse210_tc04
         }
 
         ///<summary>
-        /// This function generate next card
+        /// This function generates next card
         ///</summary>
         public string DisplayCard()
         {     

@@ -16,7 +16,9 @@ namespace cse210_tc04
         int _current_card_number = 0;
         int rounds;
         Dealer _dealer = new Dealer();
-
+        ///<summary>
+        ///  StartGame() will start the game and hold most of the direction of function-use
+        ///</summary>
         public void StartGame()
         {
             while (_keepPlaying)
@@ -28,22 +30,28 @@ namespace cse210_tc04
                 
             }
         }
-        ///<summary>
-        ///</summary>
+        
 
+        /// <summary>
+        ///  CurrentNumber() checks the current number of the card you're using and tells you through the console what it is
+        /// </summary>
         void CurrentNumber ()
         {
             string CurrentNumber = _dealer.DisplayCard();
             Console.WriteLine($"The card is: {CurrentNumber}");
         }
-
+        ///<summary>
+        ///  GuessNumber() asks for the input of your guess
+        ///</summary>
         void GuessNumber()
         {
             Console.Write("Higher or lower? ");
             _dealer._guess = Console.ReadLine();
             
         }
-        
+        ///<summary>
+        ///  UserInput() will keep asking you if you'll want to continue the game or not
+        ///</summary>
         void UserInput()
         {
             _dealer.DisplayCard();
@@ -59,6 +67,7 @@ namespace cse210_tc04
 
         
         ///<summary>
+        /// UpdateScore() updates the score each time the user inputs a guess.
         ///</summary>
         void UpdateScore()
         {
@@ -68,12 +77,16 @@ namespace cse210_tc04
             _score = _dealer._starting_score;
         }
         ///<summary>
+        /// DisplayScore() Updates the score and displays it to the player.
         ///</summary>
         void DisplayScore()
         {
             UpdateScore();
             DisplayOutput();
         }
+        ///<summary>
+        ///  DisplayOutput() displays the output of the functions.
+        ///</summary>
         void DisplayOutput()
         {
             if(_score > 0) 
@@ -89,7 +102,9 @@ namespace cse210_tc04
                 Gameover();
             }
         }
-
+        ///<summary>
+        ///  Gameover() prints the end game message.
+        ///</summary>
         void Gameover()
         {
             Console.WriteLine("Gameover. Better luck next time.");

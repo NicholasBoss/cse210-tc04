@@ -7,7 +7,10 @@ namespace cse210_tc04
         public string _posCommentary;
         public string _negCommentary;
 
-
+        ///<summary>
+        /// Creates a random positive commentary for enjoyment
+        /// I guess you could say this is Commentary in Commentary... within Commentary?
+        ///</summary>
         public void PosCommentary()
         {
             Random randGenerator = new Random();
@@ -48,7 +51,9 @@ namespace cse210_tc04
             }
             
         }
-
+        ///<summary>
+        /// Creates a random negative commentary for enjoyment
+        ///</summary>
         public void NegCommentary()
         {
             Random randGenerator = new Random();
