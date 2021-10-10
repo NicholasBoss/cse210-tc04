@@ -1,7 +1,7 @@
 # cse210-tc04
 Team Challenge 4 - HiLo
 
-Assignments:
+Assignments and Authors:
 Kody:
     Plug in wires within the Director.cs once we're done with our stuff
 Aoi:
@@ -10,9 +10,13 @@ Aoi:
 Andy:
     CheckGuess
     CheckScore
+    PosComentary
+    NegCommentary
 Nicholas: 
     IsFirstTurn
     ResetDeal
+    PosComentary
+    NegCommentary
 
 Director:
     UserInput
@@ -26,6 +30,10 @@ Dealer:
     CheckScore
     PointsPerCard
     DisplayCards
+
+Commentary:
+    PosComentary
+    NegCommentary
 
 Reminder:
 SAVE YOUR FILE!
