@@ -23,6 +23,7 @@ namespace cse210_tc04
         public int _next_card_number;
         public int _starting_score = 300;
         int _rounds = 0;
+        Commentary _commentary = new Commentary();
 
 
         ///<summary>
@@ -95,10 +96,12 @@ namespace cse210_tc04
             if (_increase_score == true)
             {
                 _starting_score += 100;
+                _commentary.PosCommentary();
             }
             else if (_increase_score == false)
             {
                 _starting_score = _starting_score - 75;
+                _commentary.NegCommentary();
             }
             _score = _starting_score;
             return _score;

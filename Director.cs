@@ -27,7 +27,6 @@ namespace cse210_tc04
                 UserInput();
                 
             }
-            Gameover();
         }
         ///<summary>
         ///</summary>
@@ -49,12 +48,12 @@ namespace cse210_tc04
         {
             _dealer.DisplayCard();
 
-           if (!_dealer.IsFirstTurn())
+           if (!_dealer.IsFirstTurn() && _score > 0)
             {
                 Console.WriteLine("Keep playing? [y/n] ");
                 string choice = Console.ReadLine();
                 _keepPlaying = (choice == "y");
-            } 
+            }
             
         }
 
@@ -86,13 +85,14 @@ namespace cse210_tc04
             }
             else if (_score <= 0)
             {
+                Console.WriteLine("Your score is 0.");
                 Gameover();
             }
         }
 
         void Gameover()
         {
-            Console.WriteLine("Gameover");
+            Console.WriteLine("Gameover. Better luck next time.");
         }
 
        
